@@ -2,12 +2,15 @@
 #define Main_H_
 
   //Do not change the organization
+  bool runAuto_flag=false;
+  bool runManual_flag=false;
+  
   #include "HAL.h"
   #include "LCD.h"
   #include "menu.h"
   #include "GUI.h"
   #include "Motor.h"
-  #include "SDcard.h"
+  //#include "SDcard.h"
 
 //======================Prototypes======================
 void init_main();
@@ -20,6 +23,7 @@ void init_main()
   LCD_init();
   delay(1000);
   
+  /*
   if (!SD.begin(chipSelect)) {
         Serial.println("Error 0");
         lcd.clear();
@@ -28,7 +32,8 @@ void init_main()
         while (1);
   }
   
-  Variables_init();
+  Variables_init();*/
+  
   updateMenu();
   }
 //======================================================

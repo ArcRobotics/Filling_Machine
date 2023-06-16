@@ -42,11 +42,11 @@ class variables{
 //======================================================
 void HAL_init()
 {
-  pinMode('#',INPUT_PULLUP);
+  //pinMode('#11',INPUT_PULLUP);
   pinMode(Motor,OUTPUT);
   //pinMode(LED_BUILTIN,OUTPUT);
   pinMode(switchPin, INPUT); 
-  pinMode(pushPedal, INPUT_PULLUP); 
+  pinMode(pushPedal, INPUT); 
   customKeypad.begin( makeKeymap(hexaKeys) );
   }
 
