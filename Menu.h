@@ -11,7 +11,8 @@ float Get_number();
 //======================Variables======================
 /*float fillTime=0;
 float waitTime=0;*/
-float count=0;
+
+
 float fillSpeed=0;
 int Motor_speed=0;
 //======================================================
@@ -81,7 +82,7 @@ float Get_number()
   float Number=0;
   int mult=2;
     for(int j=0;j<5;j++){
-      if(j<=2){
+      if(j<=2){ 
         Number+=Get_num()*pow(10,mult);
         mult--;
       }
